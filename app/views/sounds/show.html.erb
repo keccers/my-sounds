@@ -1,5 +1,6 @@
 <h1><%= @sound.username %></h1>
 <h3><%= @sound.full_name %></h3>
+<h4><%= @sound.description %></h4>
 
 <% @sound.tracks.each do |track| %>
 		<%= raw(track.widget) %>
