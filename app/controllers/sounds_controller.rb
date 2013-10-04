@@ -17,6 +17,7 @@ class SoundsController < ApplicationController
 
 	def show
 		@sound = Sound.find(params[:id])
+		@photos = @sound.get_photos
 	end
 
 end

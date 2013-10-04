@@ -1,11 +1,11 @@
 class CreateSounds < ActiveRecord::Migration
   def change
     create_table :sounds do |t|
-    	t.string  :username
-    	t.string  :avatar
-    	t.string  :full_name
-    	t.string  :city
-    	t.string  :description
+    	t.text  :username
+    	t.text  :avatar
+    	t.text  :full_name
+    	t.text  :city
+    	t.text  :description
     	t.integer :favorites
     end
   end

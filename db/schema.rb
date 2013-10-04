@@ -17,21 +17,21 @@ ActiveRecord::Schema.define(version: 20131004053508) do
   enable_extension "plpgsql"
 
   create_table "sounds", force: true do |t|
-    t.string  "username"
-    t.string  "avatar"
-    t.string  "full_name"
-    t.string  "city"
-    t.string  "description"
+    t.text    "username"
+    t.text    "avatar"
+    t.text    "full_name"
+    t.text    "city"
+    t.text    "description"
     t.integer "favorites"
   end
 
   create_table "tracks", force: true do |t|
     t.integer "sound_id"
-    t.string  "title"
-    t.string  "artist"
-    t.string  "url"
+    t.text    "title"
+    t.text    "artist"
+    t.text    "url"
     t.text    "artwork"
-    t.string  "stream_url"
+    t.text    "stream_url"
     t.integer "soundcloud_id"
     t.text    "widget"
   end

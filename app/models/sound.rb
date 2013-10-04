@@ -12,5 +12,13 @@ class Sound < ActiveRecord::Base
 			)
 	end
 
+	def get_photos
+		photos = []
+		Google::Search::Image.new(:query => username).each do |image|
+    	photos << image.uri
+  	end
+  	photos
+	end
+
 
 end

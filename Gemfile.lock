@@ -37,6 +37,8 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    google-search (1.0.3)
+      json
     hashie (2.0.5)
     hike (1.2.3)
     httmultiparty (0.3.10)
@@ -121,6 +123,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  google-search
   jbuilder (~> 1.2)
   jquery-rails
   pg

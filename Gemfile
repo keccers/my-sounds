@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Soundcloud API for streamin' tracks
 gem 'soundcloud'
 
+# Google Search for pictures!
+gem 'google-search'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

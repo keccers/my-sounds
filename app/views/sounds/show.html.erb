@@ -4,3 +4,7 @@
 <% @sound.tracks.each do |track| %>
 		<%= raw(track.widget) %>
 <% end %>
+
+<% @photos.each do |photo| %>
+	<img src=" <%= photo %> ">
+<% end %>
