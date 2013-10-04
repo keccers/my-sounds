@@ -6,16 +6,8 @@ class SoundsController < ApplicationController
 	end
 
   def create
-  	user = params['sound']['username']
-   	sc_data = client.get("/users/#{user}")
-		@sound = Sound.create(
-			username:    sc_data['username'],
-			avatar:      sc_data['avatar_url'],
-			full_name:   sc_data['full_name'],
-			city:        sc_data['city'],
-			description: sc_data['description'],
-    	favorites:  sc_data['public_favorites_count	']
-			)
+   	sc_data = client.get("/users/#{params['sound']['username']}")
+		@sound = Sound.create_new_sound(sc_data)
 	  redirect_to @sound
 	end
 
