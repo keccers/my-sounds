@@ -7,8 +7,6 @@ class CreateSounds < ActiveRecord::Migration
     	t.string  :city
     	t.string  :description
     	t.integer :favorites
-
-    	t.timestamps
     end
   end
 end

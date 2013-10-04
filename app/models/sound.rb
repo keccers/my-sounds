@@ -1,5 +1,6 @@
 class Sound < ActiveRecord::Base
-
+	has_many :tracks
+	
 	def self.create_new_sound(sc_data)
 		self.create(
 			username:    sc_data['username'],
