@@ -1,7 +1,6 @@
 <h1><%= @sound.username %></h1>
 <h3><%= @sound.full_name %></h3>
-<img src="<%= @sound.avatar %>">
 
 <% @sound.tracks.each do |track| %>
-<p> <%= track.title %> </p>
+		<%= raw(track.widget) %>
 <% end %>

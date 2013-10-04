@@ -6,13 +6,14 @@ class Track < ActiveRecord::Base
 		track_data.each do |track|
 			tracks << Track.create(
 				sound_id: sound_id,
-				title: track['title'],
-				url:   track['permalink_url'],
-				artwork: track['artwork_url']
+				soundcloud_id: track.id, 
+				title: track.title, 
+				url:   track.permalink_url,
+				stream_url: track.stream_url,
+				artwork: track.artwork_url
 				)
 		end
 		tracks
 	end
-
 
 end
